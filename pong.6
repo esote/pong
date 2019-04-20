@@ -1,0 +1,46 @@
+.Dd $Mdocdate: April 18 2019 $
+.Dt PONG 6
+.Os
+.Sh NAME
+.Nm pong
+.Nd digital tennis game
+.Sh SYNOPSIS
+.Nm pong
+.Op Fl r
+.Op Fl d Ar delay
+.Sh DESCRIPTION
+.Nm pong
+is a display-based game. The object of the game is to use your
+paddle to reflect the ball into the opponent's goal (their side of the
+wall).
+.Pp
+You control the left paddle:
+.Bl -tag -width indent
+.It Ic w
+left paddle up
+.It Ic s
+left paddle down
+.It Ic q
+quit game
+.El
+.Pp
+The right paddle, your opponent, is automatically guided.
+.Pp
+The
+.Fl r
+option disables automatic right paddle guiding and the right
+paddle can be controlled:
+.Bl -tag -width -indent
+.It Ic o
+right paddle up
+.It Ic l
+right paddle down
+.Sh NOTES
+.Nm pong
+requires ncurses. The game window can, at any time, be resized.
+This automatically adjusts the paddles to an appropriate size.
+.Sh FILES
+.Bl -tag -width $HOME/.pong.scores
+.It Pa $HOME/.pong.scores
+List of personal bests
+.El

@@ -1,0 +1,32 @@
+NAME
+	pong - digital tennis game
+
+SYNOPSIS
+	pong [-r] [-d delay]
+
+DESCRIPTION
+	pong is a display-based game. The object of the game is to use your
+	paddle to reflect the ball into your opponent's goal (their side of the
+	wall).
+
+	You control the left paddle:
+
+	w	left paddle up
+	s	left paddle down
+	q	quit game
+
+	The right paddle, your opponent, is automatically guided.
+
+	The -r option disables automatic right paddle guiding and the right
+	paddle can be controlled:
+
+	o	right paddle up
+	l	right paddle down
+
+NOTES
+	pong requires ncurses. The game window can, at any time, be resized.
+	This automatically adjusts the paddles to an appropriate size.
+
+FILES
+	$HOME/.pong.scores
+		List of personal bests
