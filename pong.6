@@ -10,9 +10,9 @@
 .Op Fl d Ar delay
 .Sh DESCRIPTION
 .Nm pong
-is a display-based game. The object of the game is to use your
-paddle to reflect the ball into the opponent's goal (their side of the
-wall).
+is a display-based game.
+The object of the game is to use your paddle to reflect the ball into the
+opponent's goal (their side of the wall).
 .Pp
 You control the left paddle:
 .Bl -tag -width indent
@@ -35,9 +35,11 @@ paddle can be controlled:
 right paddle up
 .It Ic l
 right paddle down
+.El
 .Sh NOTES
 .Nm pong
-requires ncurses. The game window can, at any time, be resized.
+requires ncurses.
+The game window can, at any time, be resized.
 This automatically adjusts the paddles to an appropriate size.
 .Sh FILES
 .Bl -tag -width $HOME/.pong.scores
